@@ -1,0 +1,20 @@
+{
+  "name": "spotify-genre-sync",
+  "version": "0.1.0",
+  "description": "Mirror local genre-organized music folders to Spotify playlists.",
+  "type": "module",
+  "bin": { "spotify-genre-sync": "./src/index.ts" },
+  "scripts": {
+    "sync": "tsx src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "music-metadata": "^11.2.1",
+    "open": "^10.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
